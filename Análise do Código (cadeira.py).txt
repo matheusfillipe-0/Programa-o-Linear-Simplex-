@@ -1,4 +1,4 @@
-Análise do Código (questão02.py)
+Análise do Código (questão 2, cadeira.py)
 
 
 
