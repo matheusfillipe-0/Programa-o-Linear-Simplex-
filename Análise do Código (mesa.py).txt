@@ -1,0 +1,33 @@
+Análise do Código (questão questão01.py)
+
+Cada Mesa Tipo A gera um lucro de R$ 30.
+Cada Mesa Tipo B gera um lucro de R$ 50.
+
+Restrições:
+
+Madeira: 2 × x1 + 1 × x2 ≤ 100 (ou seja, cada Mesa Tipo A consome 2 metros de madeira, e cada Mesa Tipo B consome 1 metro).
+
+Mão de obra: 1 × x1 + 3 × x2 ≤ 90 (ou seja, cada Mesa Tipo A consome 1 hora de mão de obra, e cada Mesa Tipo B consome 3 horas).
+
+
+Por que o solver escolheu essa solução?
+
+
+Lucro por unidade:
+
+O lucro por unidade de Mesa Tipo B (R$ 50) é maior do que o lucro por Mesa Tipo A (R$ 30). No entanto, a Mesa Tipo B consome mais horas de mão de obra (3 horas) em comparação à Mesa Tipo A (1 hora), o que limita a quantidade de mesas Tipo B que pode ser produzida.
+
+
+Restrições de recursos:
+
+A restrição de madeira permite a combinação de 42 × 2 + 16 × 1 = 100 metros de madeira, exatamente o limite disponível.
+
+A restrição de mão de obra permite produzir 42 × 1 + 16 × 3 = 90 horas de mão de obra, exatamente o limite disponível.
+
+Resultado final:
+
+Mesas Tipo A: 42.00: O solver decidiu produzir 42 unidades de Mesas Tipo A, já que essa quantidade ajuda a maximizar o uso dos recursos disponíveis.
+
+Mesas Tipo B: 16.00: O solver decidiu produzir 16 unidades de Mesas Tipo B, balanceando o consumo de mão de obra (que é mais elevado para esse tipo de mesa).
+
+Lucro Máximo: R$ 2060.00: O lucro total é calculado como 42 × 30+ 16 ×  50 = 1260 + 800 =2060.

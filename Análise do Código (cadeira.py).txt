@@ -1,0 +1,31 @@
+Análise do Código (questão02.py)
+
+
+
+Cada Cadeira Branca gera um lucro de R$ 40.
+Cada Cadeira de Madeira gera um lucro de R$ 60.
+
+
+Restrições:
+
+Madeira: 3 × y1 + 4 × y2 ≤ 120 (ou seja, cada Cadeira Branca consome 3 metros de madeira, e cada Cadeira de Madeira consome 4 metros).
+
+Mão de obra: 2 × y1 + 1 × y2 ≤ 80 (ou seja, cada Cadeira Branca consome 2 horas de mão de obra, e cada Cadeira de Madeira consome 1 hora).
+
+Por que o solver escolheu essa solução?
+
+
+O lucro por unidade de Cadeira de Madeira (R$ 60) é maior do que o lucro por Cadeira Branca (R$ 40), então o solver tentou maximizar a produção de Cadeiras de Madeira.
+
+
+A restrição de mão de obra permite produzir até 30 Cadeiras de Madeira, já que 1×30=30 horas de mão de obra  que , que está bem abaixo do limite de 80 horas.
+
+A restrição de madeira também permite produzir essas 30 cadeiras, pois 4×30=120 metros de madeira, que é o valor exato do limite de madeira.
+
+Resultado final:
+
+Cadeiras Branca: 0: O solver não produziu Cadeiras Brancas, porque produzir Cadeiras de Madeira é mais lucrativo e atende melhor às restrições.
+
+Cadeiras Madeira: 30: O solver maximiza a produção de Cadeiras de Madeira até o limite de madeira disponível.
+
+Lucro Máximo: R$ 1800: O lucro é calculado como 30×60=1800
