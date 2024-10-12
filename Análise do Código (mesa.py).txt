@@ -1,4 +1,4 @@
-Análise do Código (questão questão01.py)
+Análise do Código (questão 1, mesa.py)
 
 Cada Mesa Tipo A gera um lucro de R$ 30.
 Cada Mesa Tipo B gera um lucro de R$ 50.
